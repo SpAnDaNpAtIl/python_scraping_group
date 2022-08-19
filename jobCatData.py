@@ -15,6 +15,16 @@ for i in rows:
     for j in cols:
         if(j.text.startswith('Institutes in India')):
             continue #ignoring institutes in india section because it only contains name of institutes
+        elif(j.text.startswith('Exams and Syllabus')):
+            continue
+        elif (j.text.startswith('Psychometric Career Test')):
+            continue
+        elif (j.text.startswith('Public Admin & Government')):
+            continue
+        elif (j.text.startswith('Study Abroad')):
+            continue
+
+
         resTemp = j.text.split('\n')
         jsonRes = {'category': resTemp[0], 'subCategories': resTemp[1:]}
         jobData.append(jsonRes)
