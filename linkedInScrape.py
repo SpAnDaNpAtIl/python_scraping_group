@@ -42,6 +42,7 @@ for i in jobData:
         jobData[jobDataIndex]['subCategories'][subCatIndex] = {'Job Name': j, 'Job Listing Data': jobSubCatAvailable}
 
 
+companies = list(set(companies))
 
 scraper = cloudscraper.create_scraper()
 for i in companies:
