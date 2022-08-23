@@ -3,9 +3,6 @@ import sqlite3
 
 conn = sqlite3.connect('SQLDatabase.db')
 
-"""
-Run this set of code only initially for creating tables
-"""
 
 
 
